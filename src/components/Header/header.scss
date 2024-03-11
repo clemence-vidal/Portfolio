@@ -1,0 +1,18 @@
+@import "../../sass/abstract/colors.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    background-color: rgb(248, 244, 211);
+    font-size: 16px;
+    div {
+        padding-top: 15px;
+        a {
+            font-size: 20px;
+            color: black;
+            padding: 0 50px;
+            text-decoration: none;
+        }
+    }
+}

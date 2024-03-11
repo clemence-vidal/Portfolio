@@ -1,0 +1,49 @@
+// @import "../../sass/abstract/colors.scss";
+
+.card-project {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 2px 3px rgb(48, 21, 45);
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; 
+        border-radius: 15%;       
+    }
+    .card-paragraph {
+        border-radius: 5px;
+        position: absolute;
+        padding: 0 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }   
+    &:hover {
+        // cursor: pointer;
+        .tooltip {
+            opacity: 1;
+            visibility: visible;
+    } 
+}
+.tooltip {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border: 0px solid transparent;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
