@@ -85,7 +85,7 @@ function Home() {
             <section className="contact">
                 <div className="form">
                     <h2>Me contacter</h2>
-                    <form action="" method="post">
+                    <form action="" method="post" netlify>
                         <div>
                             {/* <label htmlFor="name">Nom : </label> */}
                             <input type="text" name="name" id="name" placeholder="Nom" required />
