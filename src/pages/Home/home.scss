@@ -18,10 +18,11 @@ main {
         text-shadow: 1px 1px 2px black;
     }
     .a-propos {
-        height: calc(100vh - 60px);
+        // height: calc(100vh - 60px);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 100px 0;
         .texte-presentation {
             width: 50%;
             text-align: center;
@@ -37,24 +38,26 @@ main {
     }
     .projets {
         margin: auto;
-        height: 100vh;
-        width: 880px;
+        // height: 100vh;
+        width: 80%;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 50px;
+        margin-bottom: 120px;
         align-content: center;
         h2 {
             width: 100%;
+            text-shadow: 1px 1px 2px rgb(248, 244, 211);
         }
     }
     .contact {
-        height: calc(100vh - 60px);
+        // height: calc(100vh - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 100px;
         .form {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.5);
@@ -90,10 +93,11 @@ main {
         .links {
             display: flex;
             align-items: center;
+            justify-content: center;
             margin-top: 50px;
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 0 20px;
+            // padding: 0 20px;
             border-radius: 20px;
             box-shadow: 3px 3px 3px black;
             a {
@@ -105,6 +109,46 @@ main {
                 &:hover {
                     color: rgb(168, 159, 159);
                     transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    main {
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+        }
+        .a-propos {
+            margin: 20px 0;
+            .texte-presentation {
+                margin: 20px;
+                width: auto;
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+        .projets {
+            flex-direction: column;
+            width: auto;
+            margin-bottom: 40px;
+        }
+        .contact {
+            margin: 0 20px 40px 20px;
+            align-items: initial;
+            // width: 80%;
+            .form {
+                width: auto;
+                // margin: 0 20px 0 20px;
+                div {
+                    input, textarea {
+                        width: 80%;
+                    }
                 }
             }
         }
