@@ -33,10 +33,20 @@ function Home() {
                 <div className="texte-presentation">
                     <h2>A propos de moi</h2>
                     <p>Je m'appelle Clémence Vidal, j'ai 27 ans, et je suis passionnée par ce qui touche principalement au web design. J'aime créer des sites web esthétiques et fonctionnels, offrant une expérience de navigation agréable. Ce portfolio représente l'aboutissement de ma formation Intégrateur web chez Openclassrooms. Vous trouverez également plus bas les projets notables réalisés durant cette formation. <br/>
-                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger des romans.
+                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger des romans. <br/>
+                    En ce qui concerne les langages et outils de programmation que j'ai été amenée à utiliser :
                     </p>    
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS & SASS</li>
+                        <li>React, React Router, Redux</li>
+                        <li>Javascript</li>
+                        <li>Git & Github</li>
+                        <li>API Rest & Swagger</li>
+                    </ul>
                 </div>            
             </section>
+            
             <section className="projets" id="projets">
                 <h2>Mes projets</h2>
                 <CardProject 
@@ -90,20 +100,26 @@ function Home() {
                 linkGit="https://github.com/clemence-vidal/OCProjet11_front"
                 linkGitName="Lien vers mon code"
                 />
-                {/* <Modal project={selectedProject} onClose={closeModal} isModalOpen={isModalOpen}  /> */}
-                
+                {/* <Modal project={selectedProject} onClose={closeModal} isModalOpen={isModalOpen}  /> */}                
             </section>
+
+            {/* <section className="langages">
+                <h2>Mes langages</h2>
+
+
+            </section> */}
+
             <section className="contact" id="contact">
                 <div className="form">
                     <h2>Me contacter</h2>
                     <form action="" method="post" netlify={"true"}>
                         <div>
                             {/* <label htmlFor="name">Nom : </label> */}
-                            <input type="text" name="name" id="name" placeholder="Nom" required />
+                            <input type="text" name="name" id="name" placeholder="Nom" autoComplete="off" required />
                         </div>
                         <div>
                             {/* <label htmlFor="email">Mail : </label> */}
-                            <input type="email" name="email" id="email" placeholder="Email" required />
+                            <input type="email" name="email" id="email" placeholder="Email" autoComplete="off" required />
                         </div>
                         <div>
                             {/* <label htmlFor="">Message : </label> */}
