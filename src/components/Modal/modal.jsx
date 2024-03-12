@@ -1,6 +1,6 @@
 import "./modal.scss";
 
-function Modal({ title, image, presentation, skill, link, onClose, show }) {
+function Modal({ title, image, presentation, skill, linkSite, linkSiteName, linkGit, linkGitName, onClose, show }) {
     // const { title, presentation, link } = project;
     // console.log(project);
     const modalClass = show ? "modal active" : "modal";
@@ -16,7 +16,10 @@ function Modal({ title, image, presentation, skill, link, onClose, show }) {
                 <img src={image} alt="" />
                 <p>{presentation}</p>
                 <p>{skill}</p>
-                <a href={link}>{link}</a>
+                <div className="liens">
+                    <a href={linkSite}>{linkSiteName}</a>
+                    <a href={linkGit}>{linkGitName}</a>
+                </div>
             </div>
             <button type="button" onClick={onClose}>Fermer</button>
         </div>

@@ -5,9 +5,9 @@ function Header() {
     return (
         <nav className="navbar">
             <div>
-                <Link to="../../pages/Home/home.jsx#a-propos">A propos</Link>
-                <Link to="../../pages/Home/home.jsx#projets">Projets</Link>
-                <Link to="../../pages/Home/home.jsx#contact">Contact</Link>
+                <Link to="home#a-propos">A propos</Link>
+                <Link to="home#projets">Projets</Link>
+                <Link to="home#contact">Contact</Link>
             </div>
         </nav>
     );
