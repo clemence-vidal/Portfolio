@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "../components/Header/header"
 import Home from '../pages/Home/home';
 import Footer from '../components/Footer/footer';
+import ArrowButton from '../components/ArrowButton/arrowButton';
 // import Login from '../pages/Login/login';
 // import Profile from '../pages/Profile/profile';
 // import "../utils/styles/index.css"
@@ -16,12 +17,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/home" element={<Home />} />   
-          {/* <Route path="/login" element={<Login />} />  
-          <Route element={<PrivateRoute />} >
-            <Route path="/profile" element={<Profile />} /> 
-          </Route>     */}
           <Route path="/" element={<Home />} />
         </Routes>
+        <ArrowButton />
         <Footer />
       </Router>
   );

@@ -34,12 +34,19 @@
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .navbar {
-        .liens {      
-            padding-top: 18px;   
+        height: 80px;
+        .liens { 
             a{
                 font-size: 1em;
-                padding: 0 10px 0 20px;  
+                padding: 0 10px 0 20px;
             }
         }
+        // .liens {      
+        //     padding-top: 18px;   
+        //     a{
+        //         font-size: 1em;
+        //         padding: 0 10px 0 20px;  
+        //     }
+        // }
     }
 }

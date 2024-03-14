@@ -62,7 +62,6 @@ main {
         text-align: justify;
     }
     .a-propos {
-        // height: calc(100vh - 60px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -102,9 +101,6 @@ main {
         h2 {
             width: 100%;
         }
-        img {
-            // margin-left: 100px;
-        }
     }
     .skills {
         display: flex;
@@ -123,19 +119,17 @@ main {
         }
     }
     .contact {
-        // height: calc(100vh - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        // padding-bottom: 100px;
         background-color: black;
         .form {
             text-align: center;
             color: white;
             width: 500px;
             padding-bottom: 20px;
-            border-radius: 5px;
+            // border-radius: 5px;
             h2 {
                 color: white;
             }
@@ -147,20 +141,14 @@ main {
                     border-radius: 5px;
                 }
                 button {
-                    border: 1px solid transparent;
                     border-radius: 5px;
                     height: 30px;
                     width: 100px;    
                     color: white;
                     background-color: #800006;
-                    transition: 0.3s ease-in-out;
-                    box-shadow: 1px 1px 3px black;
+                    cursor: pointer;
                     &:hover {
-                        cursor: pointer;
-                        transition: 0.3s ease-in-out;
-                        color: rgb(168, 159, 159);
-                        background-color: #50090c;
-                        box-shadow: 2px 2px 3px black;
+                        background-color: #b3030c;
                     }
                 }
             }

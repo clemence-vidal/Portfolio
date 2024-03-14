@@ -1,18 +1,7 @@
-import { useState } from 'react';
+import React from 'react';
 import './cardProject.scss'
-import Modal from '../Modal/modal';
 
 function CardProject({ image, title, presentation, skill, linkSite, linkSiteName, linkGit, linkGitName }) {
-    // const [showModal, setShowModal] = useState(false)
-
-    // function openModal() {
-    //     setShowModal(true);
-    // }
-
-    // function closeModal() {
-    //     setShowModal(false);
-    // }
-
     return (
         <div className="card-project">
             <div className="card-project-content">
