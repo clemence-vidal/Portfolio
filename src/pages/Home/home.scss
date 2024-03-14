@@ -3,98 +3,30 @@
 main {
     display: flex;
     flex-direction: column;
-    background-image: url("../../assets/background.jpg");
-    backdrop-filter: contrast(80%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    h2 {
-        text-align: center;
-        font-size: 2.2em;
-        text-shadow: 1px 1px 2px black;
-    }
-    p {
-        font-size: 1.2em;
-        text-shadow: 1px 1px 2px black;
-    }
-    .a-propos {
-        // height: calc(100vh - 60px);
+    background-color: #f5f5f5;
+    .en-tete {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 100px 0;
-        .texte-presentation {
-            width: 50%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white; 
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 3px 3px 3px black;
-            ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                list-style-type: none;
-            }
-        }
-    }
-    .projets {
-        margin: auto;
-        // height: 100vh;
-        width: 80%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 120px;
-        align-content: center;
-        h2 {
-            width: 100%;
-            text-shadow: 1px 1px 2px rgb(248, 244, 211);
-        }
-    }
-    .contact {
-        // height: calc(100vh - 60px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        margin-bottom: 100px;
-        .form {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            width: 500px;
-            padding-bottom: 20px;
-            border-radius: 20px;
-            box-shadow: 3px 3px 3px black;
-            div {
-                padding: 10px 0;
-                input, textarea {
-                    padding: 5px;
-                    width: 300px;
-                    border-radius: 5px;
-                }
-                button {
-                    border: 1px solid transparent;
-                    border-radius: 5px;
-                    height: 30px;
-                    width: 100px;    
-                    color: white;
-                    background-color: rgb(48, 21, 45);
-                    transition: 0.3s ease-in-out;
-                    box-shadow: 1px 1px 3px black;
-                    &:hover {
-                        cursor: pointer;
-                        transition: 0.3s ease-in-out;
-                        color: rgb(168, 159, 159);
-                        background-color: rgb(26, 12, 24);
-                        box-shadow: 2px 2px 3px black;
-                    }
-                }
-            }
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../assets/background2.jpeg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: calc(100vh - 60px);
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        img {
+            height: 400px;
+            width: 450px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1.8em;
         }
         .links {
             display: flex;
@@ -103,7 +35,6 @@ main {
             margin-top: 50px;
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            // padding: 0 20px;
             border-radius: 20px;
             box-shadow: 3px 3px 3px black;
             a {
@@ -118,6 +49,123 @@ main {
                 }
             }
         }
+        
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.2em;
+        color: #800006;
+    }
+    p {
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .a-propos {
+        // height: calc(100vh - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+        .texte-presentation {
+            width: 50%;
+            text-align: center;
+            padding: 20px;
+            color: black;
+            span {
+                color: #800006;
+                font-weight: 700;
+            }
+        }
+    }
+    .projets {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+        align-content: center;
+        h2 {
+            width: 100%;
+            color: rgb(107, 107, 107);
+        }
+    }
+    .formation {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        h2 {
+            width: 100%;
+        }
+        img {
+            // margin-left: 100px;
+        }
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+        .liste-skills {
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 600px;
+            gap: 50px;           
+        }
+    }
+    .contact {
+        // height: calc(100vh - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // padding-bottom: 100px;
+        background-color: black;
+        .form {
+            text-align: center;
+            color: white;
+            width: 500px;
+            padding-bottom: 20px;
+            border-radius: 5px;
+            h2 {
+                color: white;
+            }
+            div {
+                padding: 10px 0;
+                input, textarea {
+                    padding: 5px;
+                    width: 300px;
+                    border-radius: 5px;
+                }
+                button {
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 100px;    
+                    color: white;
+                    background-color: #800006;
+                    transition: 0.3s ease-in-out;
+                    box-shadow: 1px 1px 3px black;
+                    &:hover {
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+                        color: rgb(168, 159, 159);
+                        background-color: #50090c;
+                        box-shadow: 2px 2px 3px black;
+                    }
+                }
+            }
+        }
+        
     }
 }
 
@@ -128,6 +176,18 @@ main {
         }
         p {
             font-size: 1em;
+        }
+        .en-tete {
+            img {
+                height: 280px;
+                width: 310px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1.3em;
+            }
         }
         .a-propos {
             margin: 20px 0;

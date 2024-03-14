@@ -1,49 +1,121 @@
 // @import "../../sass/abstract/colors.scss";
 
 .card-project {
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 15%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    box-shadow: 2px 2px 3px rgb(48, 21, 45);
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover; 
-        border-radius: 15%;       
-    }
-    .card-paragraph {
-        border-radius: 5px;
-        position: absolute;
-        padding: 0 10px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5); 
-    }   
-    &:hover {
-        // cursor: pointer;
-        .tooltip {
-            opacity: 1;
-            visibility: visible;
-    } 
-}
-.tooltip {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    border: 0px solid transparent;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 20px;
+    height: 450px;
+    width: 45%;
+    border: 0 solid transparent;
+    border-radius: 100px;
+    background-image: linear-gradient(to bottom right, #800006, black);
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
+    box-shadow: 10px 10px 5px grey;
+    .card-project-content {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        h3 {        
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+            font-weight: 400;
+            text-align: center;
+        }
+        img {        
+            filter: grayscale(100%);
+            height: 100px;
+            width: 100px;
+        }
+        .liens {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(168, 167, 167, 0.5);
+            border-radius: 40px;
+            box-shadow: 3px 3px 3px black;
+            text-shadow: 3px 3px 3px #800006;
+            margin-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: white;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: 0;
+                    background-color: white;
+                    transition: width 0.3s ease;
+                }
+                &:hover::before {
+                    width: 25%;
+                }
+            }
+        }
+
+    }
+
 }
+
+
+// .card-project {
+//     // border-radius: 15%;
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: center;
+//     position: relative;
+//     img {
+//         height: 100px;
+//         width: 100px;
+//         object-fit: cover; 
+//         border-radius: 15%;       
+//     }
+//     .card-paragraph {
+//         border-radius: 5px;
+//         position: absolute;
+//         padding: 0 10px;
+//         color: white;
+//         background-color: rgba(0, 0, 0, 0.5); 
+//     }   
+//     &:hover {
+//         // cursor: pointer;
+//         .tooltip {
+//             opacity: 1;
+//             visibility: visible;
+//     } 
+// }
+// .tooltip {
+//     cursor: pointer;
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     border: 0px solid transparent;
+//     transform: translate(-50%, -50%);
+//     background-color: rgba(0, 0, 0, 0.5);
+//     color: white;
+//     padding: 10px;
+//     border-radius: 5px;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+//   }
+// }
+
+// @media screen and (min-width: 320px) and (max-width: 600px) {*
+//     .card-project {
+//         .tooltip {
+//             opacity: 1;
+//             visibility: visible;
+//         }
+
+//     }
+// }

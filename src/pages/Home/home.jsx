@@ -1,49 +1,54 @@
+import React from "react";
 import CardProject from "../../components/CardProject/cardProject";
+import Formation from "../../components/Formation/formation";
+import Skills from "../../components/Skills/skills";
 import "./home.scss";
 import booki from "../../assets/booki.png";
 import ohmyfood from "../../assets/ohmyfood.png";
 import sophiebluel from "../../assets/sophiebluel.png";
 import kasa from "../../assets/kasa.png";
 import argentbank from "../../assets/argentbank.png";
+import ninacarducci from "../../assets/ninacarducci.webp";
 import CV from "../../assets/CV_Clemence_Vidal.pdf";
-// import Modal from "../../components/Modal/modal";
-// import { useState } from "react";
+import avatar from "../../assets/avatar2.png";
+import path from "../../assets/path.png";
+import html from "../../assets/skills/html.png";
+import css from "../../assets/skills/css.png";
+import sass from "../../assets/skills/sass.png";
+import react from "../../assets/skills/react.png";
+import reduxtoolkit from "../../assets/skills/reduxtoolkit.png";
+import javascript from "../../assets/skills/javascript.png";
+import git from "../../assets/skills/git.png";
+import github from "../../assets/skills/github.png";
+import swagger from "../../assets/skills/swagger.png";
+import apirest from "../../assets/skills/apirest.png";
+import seo from "../../assets/skills/seo.png";
 
 
 function Home() {
-    // const [isModalOpen, setIsModalOpen] = useState(false);
-    // const [selectedProject, setSelectedProject] = useState(null);
-
-    // function openModal(project) {
-    //     console.log("clic");
-    //     setIsModalOpen(true);
-    //     setSelectedProject(project);
-    // }
-
-    // function closeModal() {
-    //     setIsModalOpen(false);
-    //     setSelectedProject(null);
-
-    // }
-    
-
     return (
         <main>
+            <section className="en-tete">
+                <img src={avatar} alt="avatar" />
+                <h1>CLÉMENCE VIDAL</h1>
+                <p>
+                    Développeuse front-end
+                </p>
+                <div className="links">
+                    <a href="https://github.com/clemence-vidal" target="_blank" rel="noreferrer">Github</a>
+                    <a href="https://www.linkedin.com/in/clémence-vidal/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href={CV} target="_blank" rel="noreferrer">CV</a>
+                </div>
+
+            </section>
+
             <section className="a-propos" id="a-propos">
                 <div className="texte-presentation">
                     <h2>A propos de moi</h2>
                     <p>Je m'appelle Clémence Vidal, j'ai 27 ans, et je suis passionnée par ce qui touche principalement au web design. J'aime créer des sites web esthétiques et fonctionnels, offrant une expérience de navigation agréable. Ce portfolio représente l'aboutissement de ma formation Intégrateur web chez Openclassrooms. Vous trouverez également plus bas les projets notables réalisés durant cette formation. <br/>
-                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger des romans. <br/>
-                    En ce qui concerne les langages et outils de programmation que j'ai été amenée à utiliser :
-                    </p>    
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS & SASS</li>
-                        <li>React, React Router, Redux</li>
-                        <li>Javascript</li>
-                        <li>Git & Github</li>
-                        <li>API Rest & Swagger</li>
-                    </ul>
+                    Depuis que j'ai découvert <span>React</span>, j'ai été captivée par cette technologie et j'ai développé une passion profonde pour son potentiel créatif et ses possibilités infinies. Cela a transformé ma façon de voir le développement web. <br/>
+                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger des romans.
+                    </p>
                 </div>            
             </section>
             
@@ -51,7 +56,6 @@ function Home() {
                 <h2>Mes projets</h2>
                 <CardProject 
                 image={booki}
-                text="Booki"
                 title="Projet 3 - Booki"
                 presentation="Ce projet avait pour but de me faire travailler les HTML et CSS."
                 skill="Compétences : HTML & CSS"
@@ -62,7 +66,6 @@ function Home() {
                 />
                 <CardProject 
                 image={ohmyfood}
-                text="ohmyfood"
                 title="Projet 4 - ohmyfood"
                 presentation="Ce projet avait pour but de me faire développer un site en mobile first, c'est-à-dire que j'ai dû faire la version mobile de l'application avant la version desktop, tout en ajoutant des animations CSS."
                 skill="Compétences : mobile first, SASS, animations CSS, Git & Github "
@@ -73,7 +76,6 @@ function Home() {
                 />
                 <CardProject 
                 image={sophiebluel}
-                text="Sophie Bluel - Architecte d'intérieur"
                 title="Projet 6 - Sophie Bluel - Architecte d'intérieur"
                 presentation="Ce projet avait pour but de m'entraîner à créer une page web dynamique à l'aide de Javascript, cela en communiquant avec une API."
                 skill="Compétences : Javascript, utilisation d'API"
@@ -82,7 +84,6 @@ function Home() {
                 />
                 <CardProject 
                 image={kasa}
-                // text="Kasa"  
                 title="Projet 8 - Kasa"
                 presentation="Ce projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
                 skill="Compétences : React & React Router"
@@ -91,7 +92,6 @@ function Home() {
                 />
                 <CardProject 
                 image={argentbank}
-                // text="Argent Bank"
                 title="Projet 11 - Argent Bank"
                 presentation="Ce projet avait pour but de m'apprendre à développer un site internet en utilisant React et Redux. Il fallait également intégrer le front-end avec le back-end à l'aide d'appels API. Enfin, je devais créer un Swagger pour décrire différentes routes et actions nécessaire pour l'API."
                 skill="Compétences : React & Redux, utilisation d'API, Swagger"
@@ -99,15 +99,108 @@ function Home() {
                 linkSiteName="Lien vers mon site Argent Bank"
                 linkGit="https://github.com/clemence-vidal/OCProjet11_front"
                 linkGitName="Lien vers mon code"
-                />
-                {/* <Modal project={selectedProject} onClose={closeModal} isModalOpen={isModalOpen}  /> */}                
+                />    
+                <CardProject 
+                image={ninacarducci}
+                title="Projet 9 - Nina Carducci"
+                presentation="Ce projet avait pour but de m'apprendre à optimiser le référencement (SEO) d'un site internet à l'aide de différents outils, notamment Lighthouse, Rich snippet, Wave également. J'ai également compris l'importance de bien nommer ses balises, d'en ajouter des meta, ainsi que l'avantage de minifier ses fichiers HTML, CSS et Javascript."
+                skill="Compétences : Optimisation du référencement (SEO) d'un site"
+                linkSite="https://ninacarducci-projet9-cv.netlify.app"
+                linkSiteName="Lien vers mon optimisation du site de Nina Carducci"
+                linkGit="https://github.com/clemence-vidal/OCProjet9"
+                linkGitName="Lien vers mon code"
+                />          
             </section>
 
-            {/* <section className="langages">
-                <h2>Mes langages</h2>
+            <section className="formation" id="formation">
+                <h2>Mes formations</h2>
+                <div>
+                    <Formation 
+                    titre="Intégrateur web"
+                    où="Openclassrooms - Distance"
+                    quand="2023-2024"
+                    />
+                    <Formation 
+                    titre="Licence Administration Publique"
+                    où="Université des Tertiales - Valenciennes"
+                    quand="2021-2022"
+                    />
+                    <Formation 
+                    titre="Licence spécialisation Concours, Langues et Métiers de la Culture en Anglais"
+                    où="Université du Mont-Houy - Valenciennes"
+                    quand="2017-2021"
+                    />
+                    <Formation 
+                    titre="Bac +3 en Informatique"
+                    où="SUPINFO, Ecole Supérieure d'Informatique - Valenciennes"
+                    quand="2014-2017"
+                    />
+                </div>
+                <div>
+                    <img src={path} alt="" />   
+                </div>
+            </section>
 
-
-            </section> */}
+            <section className="skills" id="skills">
+                <h2>Mes compétences</h2>
+                <div className="liste-skills">
+                    <Skills
+                    logo={html}
+                    alt="logo html"
+                    p="HTML"                    
+                    />
+                    <Skills
+                    logo={css}
+                    alt="logo css"
+                    p="CSS"                    
+                    />
+                    <Skills
+                    logo={sass}
+                    alt="logo sass"
+                    p="SASS"                    
+                    />
+                    <Skills
+                    logo={react}
+                    alt="logo react"
+                    p="React"                    
+                    />
+                    <Skills
+                    logo={reduxtoolkit}
+                    alt="logo reduxtoolkit"
+                    p="Redux Toolkit"                    
+                    />
+                    <Skills
+                    logo={javascript}
+                    alt="logo javascript"
+                    p="Javascript"                    
+                    />
+                    <Skills
+                    logo={git}
+                    alt="logo git"
+                    p="Git"                    
+                    />
+                    <Skills
+                    logo={github}
+                    alt="logo github"
+                    p="Github"                    
+                    />
+                    <Skills
+                    logo={apirest}
+                    alt="logo apirest"
+                    p="API Rest"                    
+                    />
+                    <Skills
+                    logo={swagger}
+                    alt="logo swagger"
+                    p="Swagger"                    
+                    />
+                    <Skills
+                    logo={seo}
+                    alt="logo seo"
+                    p="SEO"                    
+                    />
+                </div>
+            </section>
 
             <section className="contact" id="contact">
                 <div className="form">
@@ -129,11 +222,6 @@ function Home() {
                             <button type="submit">Envoyer</button>
                         </div>
                     </form>
-                </div>
-                <div className="links">
-                    <a href="https://github.com/clemence-vidal" target="_blank" rel="noreferrer">Github</a>
-                    <a href="https://www.linkedin.com/in/clémence-vidal/" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href={CV} target="_blank" rel="noreferrer">CV</a>
                 </div>
             </section>
         </main>

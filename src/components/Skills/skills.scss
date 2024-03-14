@@ -1,0 +1,18 @@
+.liste-skills {
+    div, p {
+    text-align: center;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 170px;
+        max-width: 100px;
+        // border: 1px red solid;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px grey;
+    }
+    p {
+        font-size: 1em;
+    }
+}
