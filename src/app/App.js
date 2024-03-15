@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from "../components/Header/header"
+import Navbar from '../components/Navbar/navbar';
+// import Header from "../components/Header/header"
 import Home from '../pages/Home/home';
 import Footer from '../components/Footer/footer';
 import ArrowButton from '../components/ArrowButton/arrowButton';
@@ -14,7 +15,7 @@ import ArrowButton from '../components/ArrowButton/arrowButton';
 function App() {
   return (
       <Router>
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />   
           <Route path="/" element={<Home />} />

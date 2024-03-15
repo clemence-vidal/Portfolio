@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/Header/header";
 import CardProject from "../../components/CardProject/cardProject";
 import Formation from "../../components/Formation/formation";
 import Skills from "../../components/Skills/skills";
@@ -9,8 +10,6 @@ import sophiebluel from "../../assets/sophiebluel.png";
 import kasa from "../../assets/kasa.png";
 import argentbank from "../../assets/argentbank.png";
 import ninacarducci from "../../assets/ninacarducci.webp";
-import CV from "../../assets/CV_Clemence_Vidal.pdf";
-import avatar from "../../assets/avatar2.png";
 import path from "../../assets/path.png";
 import html from "../../assets/skills/html.png";
 import css from "../../assets/skills/css.png";
@@ -27,27 +26,14 @@ import seo from "../../assets/skills/seo.png";
 
 function Home() {
     return (
-        <main>
-            <section className="en-tete">
-                <img src={avatar} alt="avatar" />
-                <h1>CLÉMENCE VIDAL</h1>
-                <p>
-                    Développeuse front-end
-                </p>
-                <div className="links">
-                    <a href="https://github.com/clemence-vidal" target="_blank" rel="noreferrer">Github</a>
-                    <a href="https://www.linkedin.com/in/clémence-vidal/" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href={CV} target="_blank" rel="noreferrer">CV</a>
-                </div>
-
-            </section>
-
+        <main>         
+            <Header />
             <section className="a-propos" id="a-propos">
                 <div className="texte-presentation">
                     <h2>A propos de moi</h2>
                     <p>Je m'appelle Clémence Vidal, j'ai 27 ans, et je suis passionnée par ce qui touche principalement au web design. J'aime créer des sites web esthétiques et fonctionnels, offrant une expérience de navigation agréable. Ce portfolio représente l'aboutissement de ma formation Intégrateur web chez Openclassrooms. Vous trouverez également plus bas les projets notables réalisés durant cette formation. <br/>
                     Depuis que j'ai découvert <span>React</span>, j'ai été captivée par cette technologie et j'ai développé une passion profonde pour son potentiel créatif et ses possibilités infinies. Cela a transformé ma façon de voir le développement web. <br/>
-                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger des romans.
+                    En dehors du développement web, je m'épanouis dans divers activités : j'aime jouer à des jeux vidéo, regarder des animés, lire des mangas ou encore me plonger dans des romans.
                     </p>
                 </div>            
             </section>
@@ -56,8 +42,8 @@ function Home() {
                 <h2>Mes projets</h2>
                 <CardProject 
                 image={booki}
-                title="Projet 3 - Booki"
-                presentation="Ce projet était le tout premier qui était vraiment concret. Il avait pour but de me faire travailler les HTML et CSS."
+                title="Booki"
+                presentation="Ce troisième projet était le tout premier qui était vraiment concret. Il avait pour but de me faire travailler les HTML et CSS."
                 skill="Compétences : HTML & CSS"
                 linkSite="https://booki-projet3-cv.netlify.app"
                 linkSiteName="Lien vers mon site Booki"
@@ -66,8 +52,8 @@ function Home() {
                 />
                 <CardProject 
                 image={ohmyfood}
-                title="Projet 4 - ohmyfood"
-                presentation="Ce projet avait pour but de me faire développer un site en mobile first, c'est-à-dire que j'ai dû faire la version mobile de l'application avant la version desktop, tout en ajoutant des animations CSS."
+                title="ohmyfood"
+                presentation="Ce quatrième projet avait pour but de me faire développer un site en mobile first, c'est-à-dire que j'ai dû faire la version mobile de l'application avant la version desktop, tout en ajoutant des animations CSS."
                 skill="Compétences : mobile first, SASS, animations CSS, Git & Github "
                 linkSite="https://ohmyfood-projet4-cv.netlify.app"
                 linkSiteName="Lien vers mon site ohmyfood"
@@ -76,42 +62,42 @@ function Home() {
                 />
                 <CardProject 
                 image={sophiebluel}
-                title="Projet 6 - Sophie Bluel - Architecte d'intérieur"
-                presentation="Ce projet avait pour but de m'entraîner à créer une page web dynamique à l'aide de Javascript, cela en communiquant avec une API."
+                title="Sophie Bluel - Architecte d'intérieur"
+                presentation="Ce sixième projet avait pour but de m'entraîner à créer une page web dynamique à l'aide de Javascript, cela en communiquant avec une API."
                 skill="Compétences : Javascript, utilisation d'API"
                 linkGit="https://github.com/clemence-vidal/OCProjet6"
                 linkGitName="Lien vers mon code"
                 />
                 <CardProject 
                 image={kasa}
-                title="Projet 8 - Kasa"
-                presentation="Ce projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
+                title="Kasa"
+                presentation="Ce huitième projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
                 skill="Compétences : React & React Router"
                 linkSite="https://kasa-projet8-cv.netlify.app"
                 linkSiteName="Lien vers mon site Kasa"
                 linkGit="https://github.com/clemence-vidal/OCProjet8"
                 linkGitName="Lien vers mon code"
-                />
-                <CardProject 
-                image={argentbank}
-                title="Projet 11 - Argent Bank"
-                presentation="Ce projet avait pour but de m'apprendre à développer un site internet en utilisant React et Redux. Il fallait également intégrer le front-end avec le back-end à l'aide d'appels API. Enfin, je devais créer un Swagger pour décrire différentes routes et actions nécessaire pour l'API."
-                skill="Compétences : React & Redux, utilisation d'API, Swagger"
-                linkSite="https://argentbank-projet11-cv.netlify.app"
-                linkSiteName="Lien vers mon site Argent Bank"
-                linkGit="https://github.com/clemence-vidal/OCProjet11_front"
-                linkGitName="Lien vers mon code"
                 />    
                 <CardProject 
                 image={ninacarducci}
-                title="Projet 9 - Nina Carducci"
-                presentation="Ce projet avait pour but de m'apprendre à optimiser le référencement (SEO) d'un site internet à l'aide de différents outils, notamment Lighthouse, Rich snippet, Wave également. J'ai également compris l'importance de bien nommer ses balises, d'en ajouter des meta, ainsi que l'avantage de minifier ses fichiers HTML, CSS et Javascript."
+                title="Nina Carducci"
+                presentation="Ce neuvième projet avait pour but de m'apprendre à optimiser le référencement (SEO) d'un site internet à l'aide de différents outils, notamment Lighthouse, Rich snippet, Wave également. J'ai également compris l'importance de bien nommer ses balises, d'en ajouter des meta, ainsi que l'avantage de minifier ses fichiers HTML, CSS et Javascript."
                 skill="Compétences : Optimisation du référencement (SEO) d'un site"
                 linkSite="https://ninacarducci-projet9-cv.netlify.app"
                 linkSiteName="Lien vers mon optimisation du site de Nina Carducci"
                 linkGit="https://github.com/clemence-vidal/OCProjet9"
                 linkGitName="Lien vers mon code"
-                />          
+                />     
+                <CardProject 
+                image={argentbank}
+                title="Argent Bank"
+                presentation="Ce onzième projet avait pour but de m'apprendre à développer un site internet en utilisant React et Redux. Il fallait également intégrer le front-end avec le back-end à l'aide d'appels API. Enfin, je devais créer un Swagger pour décrire différentes routes et actions nécessaires pour l'API."
+                skill="Compétences : React & Redux, utilisation d'API, Swagger"
+                linkSite="https://argentbank-projet11-cv.netlify.app"
+                linkSiteName="Lien vers mon site Argent Bank"
+                linkGit="https://github.com/clemence-vidal/OCProjet11_front"
+                linkGitName="Lien vers mon code"
+                />     
             </section>
 
             <section className="formation" id="formation">
@@ -204,20 +190,17 @@ function Home() {
                 </div>
             </section>
 
-            <section className="contact" id="contact">
+            {/* <section className="contact" id="contact">
                 <div className="form">
                     <h2>Me contacter</h2>
                     <form action="" method="post" netlify={"true"}>
                         <div>
-                            {/* <label htmlFor="name">Nom : </label> */}
                             <input type="text" name="name" id="name" placeholder="Nom" autoComplete="off" required />
                         </div>
                         <div>
-                            {/* <label htmlFor="email">Mail : </label> */}
                             <input type="email" name="email" id="email" placeholder="Email" autoComplete="off" required />
                         </div>
                         <div>
-                            {/* <label htmlFor="">Message : </label> */}
                             <textarea id="message" name="message" placeholder="Message" rows={9} required ></textarea>
                         </div>
                         <div>
@@ -225,7 +208,7 @@ function Home() {
                         </div>
                     </form>
                 </div>
-            </section>
+            </section> */}
         </main>
     );
 }
