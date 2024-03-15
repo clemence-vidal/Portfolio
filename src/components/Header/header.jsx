@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import "./header.scss"
-import logo from "../../assets/logo-portfolio.png"
+import logo from "../../assets/logo.png"
 
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
 
     return (
         <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-            <div className="logo">Logo</div>
+            <img src={logo} alt="logo" />
             <ul className="liens">
                 <li className="liens-item">
                     <Link to="home#a-propos">A propos</Link>
