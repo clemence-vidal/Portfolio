@@ -57,7 +57,7 @@ function Home() {
                 <CardProject 
                 image={booki}
                 title="Projet 3 - Booki"
-                presentation="Ce projet avait pour but de me faire travailler les HTML et CSS."
+                presentation="Ce projet était le tout premier qui était vraiment concret. Il avait pour but de me faire travailler les HTML et CSS."
                 skill="Compétences : HTML & CSS"
                 linkSite="https://booki-projet3-cv.netlify.app"
                 linkSiteName="Lien vers mon site Booki"
@@ -87,6 +87,8 @@ function Home() {
                 title="Projet 8 - Kasa"
                 presentation="Ce projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
                 skill="Compétences : React & React Router"
+                linkSite="https://kasa-projet8-cv.netlify.app"
+                linkSiteName="Lien vers mon site Kasa"
                 linkGit="https://github.com/clemence-vidal/OCProjet8"
                 linkGitName="Lien vers mon code"
                 />

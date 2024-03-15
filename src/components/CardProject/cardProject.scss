@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     margin: 20px;
-    height: 450px;
+    height: 700px;
     width: 45%;
     border: 0 solid transparent;
     border-radius: 10px;
@@ -22,11 +22,11 @@
         align-items: center;
         justify-content: space-around;
         h3 {        
-            font-size: 1.5em;
+            font-size: 1.8em;
             text-align: center;
         }
         p {
-            font-size: 1em;
+            font-size: 1.2em;
             font-weight: 400;
             text-align: center;
         }
@@ -72,9 +72,18 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 799px) {
     .card-project {
         height: auto;
         width: auto;
+        .card-project-content {
+            h3 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+
+            }
+        }
     }
 }
