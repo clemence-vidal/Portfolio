@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 import "./header.scss"
 // import logo from "../../assets/logo.png"
