@@ -23,6 +23,7 @@
         justify-content: space-around;
         h3 {        
             font-size: 1.5em;
+            text-align: center;
         }
         p {
             font-size: 1em;
@@ -69,4 +70,11 @@
 
     }
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .card-project {
+        height: auto;
+        width: auto;
+    }
 }
