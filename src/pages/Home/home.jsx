@@ -190,10 +190,11 @@ function Home() {
                 </div>
             </section>
 
-            {/* <section className="contact" id="contact">
+            <section className="contact" id="contact">
                 <div className="form">
                     <h2>Me contacter</h2>
-                    <form action="" method="post" netlify={"true"}>
+                    <form name="contact" method="post" netlify={"true"}>
+                        <input type="hidden" name="form-name" value="contact" />
                         <div>
                             <input type="text" name="name" id="name" placeholder="Nom" autoComplete="off" required />
                         </div>
@@ -208,7 +209,7 @@ function Home() {
                         </div>
                     </form>
                 </div>
-            </section> */}
+            </section>
         </main>
     );
 }
