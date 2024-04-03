@@ -4,12 +4,12 @@ import CardProject from "../../components/CardProject/cardProject";
 import Formation from "../../components/Formation/formation";
 import Skills from "../../components/Skills/skills";
 import "./home.scss";
-import booki from "../../assets/booki.png";
-import ohmyfood from "../../assets/ohmyfood.png";
-import sophiebluel from "../../assets/sophiebluel.png";
-import kasa from "../../assets/kasa.png";
-import argentbank from "../../assets/argentbank.png";
-import ninacarducci from "../../assets/ninacarducci.webp";
+import booki from "../../assets/projects/booki.png";
+import ohmyfood from "../../assets/projects/ohmyfood.png";
+import sophiebluel from "../../assets/projects/sophiebluel.png";
+import kasa from "../../assets/projects/kasa.png";
+import argentbank from "../../assets/projects/argentbank.png";
+import ninacarducci from "../../assets/projects/ninacarducci.webp";
 import path from "../../assets/path.png";
 import html from "../../assets/skills/html.png";
 import css from "../../assets/skills/css.png";
@@ -43,7 +43,7 @@ function Home() {
                 <CardProject 
                 image={booki}
                 title="Booki"
-                presentation="Ce troisième projet était le tout premier qui était vraiment concret. Il avait pour but de me faire travailler les HTML et CSS."
+                presentation="Ce projet était le tout premier qui était vraiment concret. Il avait pour but de me faire travailler les HTML et CSS."
                 skill="Compétences : HTML & CSS"
                 linkSite="https://booki-projet3-cv.netlify.app"
                 linkSiteName="Lien vers mon site Booki"
@@ -53,7 +53,7 @@ function Home() {
                 <CardProject 
                 image={ohmyfood}
                 title="ohmyfood"
-                presentation="Ce quatrième projet avait pour but de me faire développer un site en mobile first, c'est-à-dire que j'ai dû faire la version mobile de l'application avant la version desktop, tout en ajoutant des animations CSS."
+                presentation="Ce projet avait pour but de me faire développer un site en mobile first, c'est-à-dire que j'ai dû faire la version mobile de l'application avant la version desktop, tout en ajoutant des animations CSS."
                 skill="Compétences : mobile first, SASS, animations CSS, Git & Github "
                 linkSite="https://ohmyfood-projet4-cv.netlify.app"
                 linkSiteName="Lien vers mon site ohmyfood"
@@ -63,7 +63,7 @@ function Home() {
                 <CardProject 
                 image={sophiebluel}
                 title="Sophie Bluel - Architecte d'intérieur"
-                presentation="Ce sixième projet avait pour but de m'entraîner à créer une page web dynamique à l'aide de Javascript, cela en communiquant avec une API."
+                presentation="Ce projet avait pour but de m'entraîner à créer une page web dynamique à l'aide de Javascript, cela en communiquant avec une API."
                 skill="Compétences : Javascript, utilisation d'API"
                 linkGit="https://github.com/clemence-vidal/OCProjet6"
                 linkGitName="Lien vers mon code"
@@ -71,7 +71,7 @@ function Home() {
                 <CardProject 
                 image={kasa}
                 title="Kasa"
-                presentation="Ce huitième projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
+                presentation="Ce projet avait pour but de m'apprendre à implémenter le front-end d'une application à l'aide de React et React Router."
                 skill="Compétences : React & React Router"
                 linkSite="https://kasa-projet8-cv.netlify.app"
                 linkSiteName="Lien vers mon site Kasa"
@@ -81,7 +81,7 @@ function Home() {
                 <CardProject 
                 image={ninacarducci}
                 title="Nina Carducci"
-                presentation="Ce neuvième projet avait pour but de m'apprendre à optimiser le référencement (SEO) d'un site internet à l'aide de différents outils, notamment Lighthouse, Rich snippet, Wave également. J'ai également compris l'importance de bien nommer ses balises, d'en ajouter des meta, ainsi que l'avantage de minifier ses fichiers HTML, CSS et Javascript."
+                presentation="Ce projet avait pour but de m'apprendre à optimiser le référencement (SEO) d'un site internet à l'aide de différents outils, notamment Lighthouse, Rich snippet, Wave également. J'ai également compris l'importance de bien nommer ses balises, d'en ajouter des meta, ainsi que l'avantage de minifier ses fichiers HTML, CSS et Javascript."
                 skill="Compétences : Optimisation du référencement (SEO) d'un site"
                 linkSite="https://ninacarducci-projet9-cv.netlify.app"
                 linkSiteName="Lien vers mon optimisation du site de Nina Carducci"
@@ -91,7 +91,7 @@ function Home() {
                 <CardProject 
                 image={argentbank}
                 title="Argent Bank"
-                presentation="Ce onzième projet avait pour but de m'apprendre à développer un site internet en utilisant React et Redux. Il fallait également intégrer le front-end avec le back-end à l'aide d'appels API. Enfin, je devais créer un Swagger pour décrire différentes routes et actions nécessaires pour l'API."
+                presentation="Ce projet avait pour but de m'apprendre à développer un site internet en utilisant React et Redux. Il fallait également intégrer le front-end avec le back-end à l'aide d'appels API. Enfin, je devais créer un Swagger pour décrire différentes routes et actions nécessaires pour l'API."
                 skill="Compétences : React & Redux, utilisation d'API, Swagger"
                 linkSite="https://argentbank-projet11-cv.netlify.app"
                 linkSiteName="Lien vers mon site Argent Bank"

@@ -3,58 +3,11 @@
 main {
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
-    // .en-tete {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: center;
-    //     background-image: url("../../assets/background2.jpeg");
-    //     background-size: cover;
-    //     background-position: top;
-    //     background-repeat: no-repeat;
-    //     background-attachment: fixed;
-    //     height: calc(100vh - 60px);
-    //     color: white;
-    //     text-shadow: 2px 2px 10px black;
-    //     img {
-    //         height: 400px;
-    //         width: 450px;
-    //     }
-    //     h1 {
-    //         font-size: 2.5em;
-    //         margin-bottom: 0;
-    //     }
-    //     p {
-    //         font-size: 1.8em;
-    //     }
-    //     .links {
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         margin-top: 50px;
-    //         color: white;
-    //         background-color: rgba(0, 0, 0, 0.5);
-    //         border-radius: 20px;
-    //         box-shadow: 3px 3px 3px black;
-    //         a {
-    //             text-decoration: none;
-    //             color: white;
-    //             padding: 10px 20px;
-    //             transition: 0.3s ease-in-out;
-    //             text-shadow: 1px 1px 2px black;
-    //             &:hover {
-    //                 color: rgb(168, 159, 159);
-    //                 transition: 0.3s ease-in-out;
-    //             }
-    //         }
-    //     }
-        
-    // }
+    background-color: $background;
     h2 {
         text-align: center;
         font-size: 2.6em;
-        color: #800006;
+        color: $dark-red;
     }
     p {
         font-size: 1.4em;
@@ -70,9 +23,9 @@ main {
             width: 50%;
             text-align: center;
             padding: 20px;
-            color: black;
+            color: $black;
             span {
-                color: #800006;
+                color: $dark-red;
                 font-weight: 700;
             }
         }
@@ -87,7 +40,7 @@ main {
         align-content: center;
         h2 {
             width: 100%;
-            color: rgb(107, 107, 107);
+            color: $grey;
         }
     }
     .formation {
@@ -123,15 +76,14 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: black;
+        background-color: $black;
         .form {
             text-align: center;
-            color: white;
+            color: $white;
             width: 500px;
             padding-bottom: 20px;
-            // border-radius: 5px;
             h2 {
-                color: white;
+                color: $white;
             }
             div {
                 padding: 10px 0;
@@ -144,16 +96,15 @@ main {
                     border-radius: 5px;
                     height: 30px;
                     width: 100px;    
-                    color: white;
-                    background-color: #800006;
+                    color: $white;
+                    background-color: $dark-red;
                     cursor: pointer;
                     &:hover {
-                        background-color: #b3030c;
+                        background-color: $light-red;
                     }
                 }
             }
-        }
-        
+        }        
     }
 }
 
@@ -165,18 +116,6 @@ main {
         p {
             font-size: 1em;
         }
-        // .en-tete {
-        //     img {
-        //         height: 280px;
-        //         width: 310px;
-        //     }
-        //     h1 {
-        //         font-size: 1.8em;
-        //     }
-        //     p {
-        //         font-size: 1.3em;
-        //     }
-        // }
         .a-propos {
             margin: 20px 0;
             .texte-presentation {
@@ -191,8 +130,7 @@ main {
             flex-direction: column;
             width: auto;
             margin-bottom: 40px;
-        }
-            
+        }            
         .contact {
             align-items: initial;
             .form {

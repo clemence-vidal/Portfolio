@@ -1,6 +1,7 @@
 import React from "react";
 import "./formation.scss";
 
+
 function Formation({ titre, où, quand }) {
     return (
         <div className="formation-content">

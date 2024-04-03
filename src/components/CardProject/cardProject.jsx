@@ -1,6 +1,7 @@
 import React from 'react';
 import './cardProject.scss'
 
+
 function CardProject({ image, title, presentation, skill, linkSite, linkSiteName, linkGit, linkGitName }) {
     return (
         <div className="card-project">

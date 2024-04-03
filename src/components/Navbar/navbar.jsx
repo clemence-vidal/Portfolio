@@ -6,7 +6,6 @@ import logo from "../../assets/logo.png"
 
 function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
-
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
     };

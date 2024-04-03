@@ -1,52 +1,16 @@
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
-    .form {
-        text-align: center;
-        color: white;
-        width: 500px;
-        // padding-bottom: 20px;
-        // border-radius: 5px;
-        h2 {
-            color: white;
-        }
-        div {
-            padding: 10px 0;
-            input, textarea {
-                padding: 5px;
-                width: 300px;
-                border-radius: 5px;
-            }
-            button {
-                border-radius: 5px;
-                height: 30px;
-                width: 100px;    
-                color: white;
-                background-color: #800006;
-                cursor: pointer;
-                &:hover {
-                    background-color: #b3030c;
-                }
-            }
-        }
-    }
-    
-}
+@import "../../sass/abstract/colors.scss";
+
 .footer {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: black;
+    color: $white;
+    background-color: $black;
     .secret {
         display: none;
     }
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .contact {

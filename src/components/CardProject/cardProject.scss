@@ -1,4 +1,4 @@
-// @import "../../sass/abstract/colors.scss";
+@import "../../sass/abstract/colors.scss";
 
 .card-project {
     display: flex;
@@ -11,9 +11,9 @@
     width: 45%;
     border: 0 solid transparent;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #800006, black);
-    color: white;
-    box-shadow: 10px 10px 5px grey;
+    background-image: linear-gradient(to bottom right, $dark-red, $black);
+    color: $white;
+    box-shadow: 10px 10px 5px $grey;
     .card-project-content {
         margin: 20px;
         display: flex;
@@ -31,7 +31,6 @@
             text-align: center;
         }
         img {        
-            // filter: grayscale(100%);
             height: 100px;
             width: 100px;
         }
@@ -42,34 +41,20 @@
             padding: 20px;
             background-color: rgba(168, 167, 167, 0.5);
             border-radius: 40px;
-            box-shadow: 3px 3px 3px black;
-            text-shadow: 3px 3px 3px #800006;
+            box-shadow: 3px 3px 3px $black;
+            text-shadow: 3px 3px 3px $dark-red;
             margin-bottom: 20px;
             a {
                 text-decoration: none;
-                color: white;
+                color: $white;
                 &:hover {
-                    color: rgb(180, 180, 180);
-                    text-shadow: -3px 3px 3px #800006;
+                    color: $links;
+                    text-shadow: -3px 3px 3px $dark-red;
                     transition: 0.3s ease;
                 }
-                // &::before{
-                //     content: '';
-                //     position: absolute;
-                //     width: 0;
-                //     height: 2px;
-                //     bottom: 0;
-                //     background-color: white;
-                //     transition: width 0.3s ease;
-                // }
-                // &:hover::before {
-                //     width: 25%;
-                // }
             }
         }
-
     }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 799px) {
@@ -82,7 +67,6 @@
             }
             p {
                 font-size: 1em;
-
             }
         }
     }
