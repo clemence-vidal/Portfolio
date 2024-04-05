@@ -1,0 +1,36 @@
+@import "../../sass/abstract/colors.scss";
+
+.sent-message {
+    height: calc(100vh - 60px);
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        background-image: linear-gradient(to bottom right, $dark-red, $black);
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px $grey;
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h3 {
+            text-align: center;
+            margin: 0;
+            color: $white;
+            font-weight: 500;
+        }
+        a {
+            color: $links;
+            // text-decoration: none;
+            margin-top: 60px;
+            margin-bottom: 50px;
+            &:hover {
+                color: $grey;
+
+            }
+        }
+    }
+}

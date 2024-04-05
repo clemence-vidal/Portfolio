@@ -92,6 +92,9 @@ main {
                     width: 300px;
                     border-radius: 5px;
                 }
+                textarea {                    
+                    resize : none; 
+                }
                 button {
                     border-radius: 5px;
                     height: 30px;
