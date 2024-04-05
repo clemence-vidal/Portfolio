@@ -145,7 +145,7 @@ function Home() {
             <section className="contact" id="contact">
                 <div className="form">
                     <h2>Me contacter</h2>
-                    <form name="contact" method="post" netlify={"true"}>
+                    <form name="contact" method="post" action="/pages/Sent/sent.jsx" netlify={"true"}>
                         <input type="hidden" name="form-name" value="contact" />
                         <div>
                             <input type="text" name="name" id="name" placeholder="Nom" autoComplete="off" required />
